@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Geo Project{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+<header class="header">
+    <h1>🌍 Geo Project</h1>
+    <p class="subtitle">Изучай страны и проверяй знания</p>
+</header>
+
+<nav class="navbar">
+    <a href="{% url 'home' %}">Главная</a>
+    <a href="{% url 'list' %}">Страны</a>
+    <a href="{% url 'form' %}">Добавить страну</a>
+    <a href="{% url 'quiz' %}">Викторина</a>
+</nav>
+
+<main class="container">
+    {% block content %}
+    {% endblock %}
+</main>
+
+<footer class="footer">
+    <p>© 2026 Geo Project</p>
+</footer>
+
+</body>
+</html>

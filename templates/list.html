@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Список стран{% endblock %}
+
+{% block content %}
+<h2>Список стран 🌍</h2>
+
+{% if countries %}
+<table>
+    <tr>
+        <th>Флаг</th>
+        <th>Страна</th>
+        <th>Столица</th>
+        <th>Площадь</th>
+        <th>Население</th>
+    </tr>
+
+    {% for country in countries %}
+    <tr>
+        <td>
+            <img src="{{ country.flag_url }}" width="50">
+        </td>
+        <td>{{ country.name }}</td>
+        <td>{{ country.capital }}</td>
+        <td>{{ country.square }}</td>
+        <td>{{ country.population }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% else %}
+<p>Пока нет данных 😢</p>
+{% endif %}
+
+{% endblock %}
