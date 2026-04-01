@@ -21,7 +21,8 @@ from country_learner import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
-    path('countries/', views.country_list, name='list'),
-    path('countries/add/', views.country_add, name='form'),
+    path('countries/', views.country_list, name='country_list'),
+    path('countries/add/', views.country_add, name='country_add'),
+    path('my-countries/', views.my_countries, name='my_countries'),
     path('quiz/', views.quiz, name='quiz'),
 ]

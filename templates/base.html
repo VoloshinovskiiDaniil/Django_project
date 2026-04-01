@@ -10,14 +10,16 @@
 
 <header class="header">
     <h1>🌍 Geo Project</h1>
-    <p class="subtitle">Изучай страны и проверяй знания</p>
+    <p class="subtitle">Explore the world and check your knowledge</p>
 </header>
 
 <nav class="navbar">
-    <a href="{% url 'home' %}">Главная</a>
-    <a href="{% url 'list' %}">Страны</a>
-    <a href="{% url 'form' %}">Добавить страну</a>
-    <a href="{% url 'quiz' %}">Викторина</a>
+    <a href="{% url 'home' %}">Home</a>
+    <a href="{% url 'country_list' %}">All countries</a>
+    <a href="{% url 'my_countries' %}">My countries</a>
+    <a href="{% url 'country_add' %}">Add country</a>
+    <a href="{% url 'quiz' %}">Quiz</a>
+</nav>
 </nav>
 
 <main class="container">

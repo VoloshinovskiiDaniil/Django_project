@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}My countries{% endblock %}
+
+{% block content %}
+<h2>My countries</h2>
+
+{% if countries %}
+<table>
+    <tr>
+        <th>Country</th>
+        <th>Capital</th>
+        <th>Square</th>
+        <th>Population</th>
+    </tr>
+
+    {% for item in countries %}
+    <tr>
+        <td>{{ item.country.name }}</td>
+        <td>{{ item.country.capital }}</td>
+        <td>{{ item.country.square }}</td>
+        <td>{{ item.country.population }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>No countries have been added to this list yet </p>
+{% endif %}
+
+{% endblock %}

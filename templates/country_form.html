@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Add country{% endblock %}
+
+{% block content %}
+<h2>Add country</h2>
+
+<form method="post">
+    {% csrf_token %}
+
+    {{ form.non_field_errors }}
+
+    <p>
+        {{ form.name.label }}<br>
+        {{ form.name }}
+        <span class="error">{{ form.name.errors }}</span>
+    </p>
+
+    <button type="submit">Submit</button>
+</form>
+
+{% endblock %}

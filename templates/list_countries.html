@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Все страны{% endblock %}
+
+{% block content %}
+<h2>All countries 🌍</h2>
+
+<table>
+    <tr>
+        <th>Country</th>
+        <th>Capital</th>
+        <th>Square</th>
+        <th>Population</th>
+    </tr>
+
+    {% for country in countries %}
+    <tr>
+        <td>{{ country.name }}</td>
+        <td>{{ country.capital }}</td>
+        <td>{{ country.square }}</td>
+        <td>{{ country.population }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
