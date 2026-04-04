@@ -5,6 +5,29 @@
 {% block content %}
 <h2>My countries</h2>
 
+<form method="post" action="{% url 'modify_countries' %}">
+    {% csrf_token %}
+
+    <div class="button-grid">
+
+        <!-- ADD -->
+        <button type="submit" name="action" value="add_world">Add World</button>
+        <button type="submit" name="action" value="add_europe">Add Europe</button>
+        <button type="submit" name="action" value="add_asia">Add Asia</button>
+        <button type="submit" name="action" value="add_africa">Add Africa</button>
+        <button type="submit" name="action" value="add_america">Add America</button>
+        <button type="submit" name="action" value="add_oceania">Add Oceania</button>
+
+        <!-- CLEAR -->
+        <button class="clear-btn" type="submit" name="action" value="clear_world">Clear World</button>
+        <button class="clear-btn" type="submit" name="action" value="clear_europe">Clear Europe</button>
+        <button class="clear-btn" type="submit" name="action" value="clear_asia">Clear Asia</button>
+        <button class="clear-btn" type="submit" name="action" value="clear_africa">Clear Africa</button>
+        <button class="clear-btn" type="submit" name="action" value="clear_america">Clear America</button>
+        <button class="clear-btn" type="submit" name="action" value="clear_oceania">Clear Oceania</button>
+
+    </div>
+</form>
 {% if countries %}
 <table>
     <tr>
@@ -29,4 +52,9 @@
 <p>No countries have been added to this list yet </p>
 {% endif %}
 
+<script>
+function setRegion(region) {
+    document.getElementById('regionInput').value = region;
+}
+</script>
 {% endblock %}
