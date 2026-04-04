@@ -1,0 +1,195 @@
+name,capital,square,population,part
+Afghanistan,Kabul,652k,41.1m,Asia
+Albania,Tirana,28.7k,2.8m,Europe
+Algeria,Algiers,2.38m,45.6m,Africa
+Andorra,Andorra la Vella,468,79k,Europe
+Angola,Luanda,1.25m,36.7m,Africa
+Antigua and Barbuda,Saint John's,442,102k,America
+Argentina,Buenos Aires,2.78m,45.8m,America
+Armenia,Yerevan,29.7k,2.8m,Asia
+Australia,Canberra,7.69m,26.6m,Oceania
+Austria,Vienna,83.9k,9.1m,Europe
+Azerbaijan,Baku,86.6k,10.4m,Asia
+Bahamas,Nassau,13.9k,410k,America
+Bahrain,Manama,786,1.57m,Asia
+Bangladesh,Dhaka,148k,173.0m,Asia
+Barbados,Bridgetown,430,281k,America
+Belarus,Minsk,207.6k,9.2m,Europe
+Belgium,Brussels,30.5k,11.7m,Europe
+Belize,Belmopan,23k,417k,America
+Benin,Porto-Novo,114.8k,13.7m,Africa
+Bhutan,Thimphu,38.4k,787k,Asia
+Bolivia,Sucre,1.10m,12.4m,America
+Bosnia and Herzegovina,Sarajevo,51.2k,3.2m,Europe
+Botswana,Gaborone,581.7k,2.6m,Africa
+Brazil,Brasilia,8.51m,214.3m,America
+Brunei,Bandar Seri Begawan,5.8k,449k,Asia
+Bulgaria,Sofia,111k,6.4m,Europe
+Burkina Faso,Ouagadougou,274k,23.3m,Africa
+Burundi,Gitega,27.8k,13.4m,Africa
+Cabo Verde,Praia,4k,598k,Africa
+Cambodia,Phnom Penh,181k,17.0m,Asia
+Cameroon,Yaounde,475k,28.6m,Africa
+Canada,Ottawa,9.98m,40.1m,America
+Central African Republic,Bangui,623k,5.7m,Africa
+Chad,N'Djamena,1.28m,18.3m,Africa
+Chile,Santiago,756k,19.6m,America
+China,Beijing,9.60m,1410m,Asia
+Colombia,Bogota,1.14m,52.2m,America
+Comoros,Moroni,2.2k,852k,Africa
+Congo,Brazzaville,342k,6.1m,Africa
+Costa Rica,San Jose,51.1k,5.2m,America
+Croatia,Zagreb,56.6k,3.9m,Europe
+Cuba,Havana,110.9k,11.1m,America
+Cyprus,Nicosia,9.3k,1.3m,Europe
+Czechia,Prague,78.9k,10.9m,Europe
+Denmark,Copenhagen,43.1k,5.9m,Europe
+Djibouti,Djibouti,23.2k,1.1m,Africa
+Dominica,Roseau,751,72k,America
+Dominican Republic,Santo Domingo,48.7k,11.3m,America
+DR Congo,Kinshasa,2.34m,102.3m,Africa
+Ecuador,Quito,256k,18.3m,America
+Egypt,Cairo,1.00m,111.0m,Africa
+El Salvador,San Salvador,21k,6.3m,America
+Equatorial Guinea,Malabo,28k,1.8m,Africa
+Eritrea,Asmara,117.6k,3.7m,Africa
+Estonia,Tallinn,45.2k,1.4m,Europe
+Eswatini,Mbabane,17.4k,1.2m,Africa
+Ethiopia,Addis Ababa,1.10m,126.5m,Africa
+Fiji,Suva,18.3k,936k,Oceania
+Finland,Helsinki,338k,5.6m,Europe
+France,Paris,643k,67.5m,Europe
+Gabon,Libreville,268k,2.4m,Africa
+Gambia,Banjul,11.3k,2.7m,Africa
+Georgia,Tbilisi,69.7k,3.7m,Asia
+Germany,Berlin,357.6k,83.3m,Europe
+Ghana,Accra,238.5k,34.1m,Africa
+Greece,Athens,132k,10.4m,Europe
+Grenada,St. George's,344,126k,America
+Guatemala,Guatemala City,109k,18.1m,America
+Guinea,Conakry,246k,14.3m,Africa
+Guinea-Bissau,Bissau,36.1k,2.1m,Africa
+Guyana,Georgetown,215k,814k,America
+Haiti,Port-au-Prince,27.8k,11.5m,America
+Honduras,Tegucigalpa,112k,10.6m,America
+Hungary,Budapest,93k,9.6m,Europe
+Iceland,Reykjavik,103k,387k,Europe
+India,New Delhi,3.29m,1430m,Asia
+Indonesia,Jakarta,1.90m,277.5m,Asia
+Iran,Tehran,1.65m,89.2m,Asia
+Iraq,Baghdad,438k,45.5m,Asia
+Ireland,Dublin,70.3k,5.3m,Europe
+Israel,Jerusalem,22k,9.8m,Asia
+Italy,Rome,301k,58.9m,Europe
+Jamaica,Kingston,11k,2.8m,America
+Japan,Tokyo,378k,124.3m,Asia
+Jordan,Amman,89.3k,11.3m,Asia
+Kazakhstan,Astana,2.72m,20.1m,Asia
+Kenya,Nairobi,580k,55.3m,Africa
+Kiribati,South Tarawa,811,131k,Oceania
+Kuwait,Kuwait City,17.8k,4.3m,Asia
+Kyrgyzstan,Bishkek,200k,7.1m,Asia
+Laos,Vientiane,237k,7.6m,Asia
+Latvia,Riga,64.6k,1.9m,Europe
+Lebanon,Beirut,10.5k,5.5m,Asia
+Lesotho,Maseru,30.4k,2.3m,Africa
+Liberia,Monrovia,111k,5.4m,Africa
+Libya,Tripoli,1.76m,7.0m,Africa
+Liechtenstein,Vaduz,160,39k,Europe
+Lithuania,Vilnius,65.3k,2.9m,Europe
+Luxembourg,Luxembourg,2.6k,660k,Europe
+Madagascar,Antananarivo,587k,30.3m,Africa
+Malawi,Lilongwe,118k,20.9m,Africa
+Malaysia,Kuala Lumpur,330k,34.3m,Asia
+Maldives,Male,300,521k,Asia
+Mali,Bamako,1.24m,23.3m,Africa
+Malta,Valletta,316,542k,Europe
+Marshall Islands,Majuro,181,42k,Oceania
+Mauritania,Nouakchott,1.03m,4.9m,Africa
+Mauritius,Port Louis,2k,1.3m,Africa
+Mexico,Mexico City,1.96m,133.0m,America
+Micronesia,Palikir,702,115k,Oceania
+Moldova,Chisinau,33.8k,2.5m,Europe
+Monaco,Monaco,2,39k,Europe
+Mongolia,Ulaanbaatar,1.56m,3.5m,Asia
+Montenegro,Podgorica,13.8k,620k,Europe
+Morocco,Rabat,446k,37.8m,Africa
+Mozambique,Maputo,802k,33.9m,Africa
+Myanmar,Naypyidaw,676k,55.0m,Asia
+Namibia,Windhoek,825k,2.6m,Africa
+Nauru,Yaren,21,12k,Oceania
+Nepal,Kathmandu,147k,30.5m,Asia
+Netherlands,Amsterdam,41.9k,17.9m,Europe
+New Zealand,Wellington,268k,5.2m,Oceania
+Nicaragua,Managua,130k,6.9m,America
+Niger,Niamey,1.27m,27.3m,Africa
+Nigeria,Abuja,924k,227.0m,Africa
+North Korea,Pyongyang,120k,26.2m,Asia
+North Macedonia,Skopje,25.7k,1.8m,Europe
+Norway,Oslo,385k,5.5m,Europe
+Oman,Muscat,309k,4.6m,Asia
+Pakistan,Islamabad,881k,240.5m,Asia
+Palau,Ngerulmud,459,18000,Oceania
+Palestine,Ramallah,6k,5.5m,Asia
+Panama,Panama City,75k,4.5m,America
+Papua New Guinea,Port Moresby,463k,10.3m,Oceania
+Paraguay,Asuncion,406k,7.4m,America
+Peru,Lima,1.29m,34.4m,America
+Philippines,Manila,300k,117.3m,Asia
+Poland,Warsaw,312k,37.7m,Europe
+Portugal,Lisbon,92k,10.3m,Europe
+Qatar,Doha,11.6k,2.7m,Asia
+Romania,Bucharest,238k,19.0m,Europe
+Russia,Moscow,17.1m,143.4m,Europe
+Rwanda,Kigali,26.3k,14.1m,Africa
+Saint Kitts and Nevis,Basseterre,261,54k,America
+Saint Lucia,Castries,617,180k,America
+Saint Vincent and the Grenadines,Kingstown,389,110k,America
+Samoa,Apia,2.8k,225k,Oceania
+San Marino,San Marino,61,34k,Europe
+Sao Tome and Principe,Sao Tome,964,231k,Africa
+Saudi Arabia,Riyadh,2.15m,36.4m,Asia
+Senegal,Dakar,197k,18.4m,Africa
+Serbia,Belgrade,88k,6.6m,Europe
+Seychelles,Victoria,455,107k,Africa
+Sierra Leone,Freetown,72k,8.7m,Africa
+Singapore,Singapore,728,5.9m,Asia
+Slovakia,Bratislava,49k,5.4m,Europe
+Slovenia,Ljubljana,20k,2.1m,Europe
+Solomon Islands,Honiara,29k,740k,Oceania
+Somalia,Mogadishu,637k,18.1m,Africa
+South Africa,Pretoria,1.22m,62.0m,Africa
+South Korea,Seoul,100k,51.7m,Asia
+South Sudan,Juba,644k,11.1m,Africa
+Spain,Madrid,506k,47.6m,Europe
+Sri Lanka,Colombo,66k,22.0m,Asia
+Sudan,Khartoum,1.86m,49.0m,Africa
+Suriname,Paramaribo,163k,630k,America
+Sweden,Stockholm,450k,10.5m,Europe
+Switzerland,Bern,41.3k,8.9m,Europe
+Syria,Damascus,185k,23.2m,Asia
+Tajikistan,Dushanbe,143k,10.2m,Asia
+Tanzania,Dodoma,945k,67.4m,Africa
+Thailand,Bangkok,513k,71.8m,Asia
+Timor-Leste,Dili,15k,1.4m,Asia
+Togo,Lome,57k,9.1m,Africa
+Tonga,Nuku'alofa,747,105k,Oceania
+Trinidad and Tobago,Port of Spain,5.1k,1.4m,America
+Tunisia,Tunis,164k,12.3m,Africa
+Turkey,Ankara,783k,85.3m,Asia
+Turkmenistan,Ashgabat,488k,6.4m,Asia
+Tuvalu,Funafuti,26,11000,Oceania
+Uganda,Kampala,241k,49.7m,Africa
+Ukraine,Kyiv,603k,36.7m,Europe
+United Arab Emirates,Abu Dhabi,83.6k,9.5m,Asia
+United Kingdom,London,243k,67.9m,Europe
+United States,Washington D.C.,9.83m,349.0m,America
+Uruguay,Montevideo,176k,3.4m,America
+Uzbekistan,Tashkent,447k,36.7m,Asia
+Vanuatu,Port Vila,12k,320k,Oceania
+Vatican City,Vatican City,0.44,800,Europe
+Venezuela,Caracas,916k,28.3m,America
+Vietnam,Hanoi,331k,100.3m,Asia
+Yemen,Sanaa,527k,34.7m,Asia
+Zambia,Lusaka,752k,20.6m,Africa
+Zimbabwe,Harare,391k,16.7m,Africa

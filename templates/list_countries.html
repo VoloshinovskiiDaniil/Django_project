@@ -9,8 +9,9 @@
     <tr>
         <th>Country</th>
         <th>Capital</th>
-        <th>Square</th>
+        <th>Square (km<sup>2</sup>)</th>
         <th>Population</th>
+	<th>World Part</th>
     </tr>
 
     {% for country in countries %}
@@ -19,6 +20,7 @@
         <td>{{ country.capital }}</td>
         <td>{{ country.square }}</td>
         <td>{{ country.population }}</td>
+	<td>{{ country.world_part }}</td>
     </tr>
     {% endfor %}
 </table>
