@@ -2,6 +2,7 @@ from django import forms
 from .models import Country
 
 class AddCountryForm(forms.Form):
+    """Form include only field: name of a country"""
     name = forms.CharField(label="Name of a country", max_length=100)
 
     def clean_name(self):

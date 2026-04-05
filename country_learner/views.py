@@ -4,15 +4,18 @@ from .models import Country, UserCountry
 from .forms import AddCountryForm
 
 def home(request):
+    """Render home page"""
     return render(request, 'home.html')
 
 
 def country_list(request):
+    """Render list of all countries"""
     countries = Country.objects.all()
     return render(request, 'list_countries.html', { 'countries': countries })
 
 
 def my_countries(request):
+    """Render list of user's countries"""
     countries = UserCountry.objects.all()
     return render(request, 'my_countries.html', {
         'countries': countries
@@ -20,6 +23,7 @@ def my_countries(request):
 
 
 def country_manage(request):
+    """Render form for adding / removing countries one by one"""
     form = AddCountryForm(request.POST or None)
 
     if request.method == 'POST':
@@ -40,6 +44,7 @@ def country_manage(request):
 
 
 def modify_user_countries(request):
+    """Add/Remove countries by groups"""
     action = request.POST.get('action')
 
     if action == 'add_world':
@@ -94,6 +99,7 @@ def modify_user_countries(request):
 
 
 def quiz(request):
+    """Render quiz page"""
     user_countries = UserCountry.objects.all()
 
     if not user_countries.exists():

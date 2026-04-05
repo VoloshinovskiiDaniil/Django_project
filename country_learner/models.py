@@ -1,6 +1,7 @@
 from django.db import models
 
 class Country(models.Model):
+    """Model of country"""
     name = models.CharField(max_length=100)
     capital = models.CharField(max_length=100)
     square = models.CharField(max_length=100)
@@ -12,6 +13,7 @@ class Country(models.Model):
 
 
 class UserCountry(models.Model):
+    """Model of a country which can be added to the user's list"""
     country = models.ForeignKey(Country, on_delete=models.CASCADE)
 
     def __str__(self):
