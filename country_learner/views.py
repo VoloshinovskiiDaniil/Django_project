@@ -21,22 +21,20 @@ def my_countries(request):
 
 def country_manage(request):
     form = AddCountryForm(request.POST or None)
-    message = None
 
-    if request.method == 'POST' and form.is_valid():
-        name = form.cleaned_data['name']
-        country = Country.objects.get(name__iexact=name)
-        action = request.POST.get('action')
+    if request.method == 'POST':
+        if form.is_valid():
+            name = form.cleaned_data['name']
+            country = Country.objects.get(name__iexact=name)
+            action = request.POST.get('action')
 
-        if action == 'add':
-            UserCountry.objects.get_or_create(country=country)
-            message = f"{country.name} added to your countries."
+            if action == 'add':
+                UserCountry.objects.get_or_create(country=country)
 
-        elif action == 'remove':
-            UserCountry.objects.filter(country=country).delete()
-            message = f"{country.name} removed from your countries."
+            elif action == 'remove':
+                UserCountry.objects.filter(country=country).delete()
 
-        return redirect('my_countries')
+            return redirect('my_countries')
 
     return render(request, 'country_form.html', {'form': form})
 
