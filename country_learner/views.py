@@ -1,3 +1,4 @@
+import random
 from django.shortcuts import render, redirect
 from .models import Country, UserCountry
 from .forms import AddCountryForm
@@ -86,5 +87,47 @@ def modify_user_countries(request):
 
     return redirect('my_countries')
 
+
 def quiz(request):
-    return render(request, 'quiz.html')
+    user_countries = UserCountry.objects.all()
+
+    if not user_countries.exists():
+        return render(request, 'quiz.html', {
+            'error': 'No countries in your list!'
+        })
+
+    if request.method == 'GET':
+        country = random.choice([uc.country for uc in user_countries])
+        hints = []
+        message = None
+
+    else:
+        country_id = request.POST.get('country_id')
+        country = Country.objects.get(id=country_id)
+
+        hints = request.POST.getlist('hints')
+        message = None
+
+    if 'next' in request.POST:
+        country = random.choice([uc.country for uc in user_countries])
+        hints = []
+        message = None
+
+    elif 'hint' in request.POST:
+        hint = request.POST.get('hint')
+        if hint not in hints:
+            hints.append(hint)
+
+    elif 'answer' in request.POST:
+        answer = request.POST.get('answer', '').strip()
+
+        if answer.lower() == country.name.lower():
+            message = "Correct!"
+        else:
+            message = f"Wrong! It was {country.name}"
+
+    return render(request, 'quiz.html', {
+        'country': country,
+        'hints': hints,
+        'message': message
+    })

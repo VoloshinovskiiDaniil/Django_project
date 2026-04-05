@@ -1,4 +1,58 @@
 {% extends 'base.html' %}
+
 {% block content %}
-<h2>Викторина</h2>
+
+<h2>Quiz</h2>
+
+{% if error %}
+    <p>{{ error }}</p>
+{% else %}
+
+<form method="post">
+    {% csrf_token %}
+
+    <input type="hidden" name="country_id" value="{{ country.id }}">
+
+    {% for h in hints %}
+        <input type="hidden" name="hints" value="{{ h }}">
+    {% endfor %}
+
+    <button name="hint" value="capital">Show Capital</button>
+    <button name="hint" value="square">Show Area</button>
+    <button name="hint" value="population">Show Population</button>
+    <button name="hint" value="world_part">Show World Part</button>
+
+    <hr>
+
+    {% if 'capital' in hints %}
+        <p>Capital: {{ country.capital }}</p>
+    {% endif %}
+
+    {% if 'square' in hints %}
+        <p>Area: {{ country.square }}</p>
+    {% endif %}
+
+    {% if 'population' in hints %}
+        <p>Population: {{ country.population }}</p>
+    {% endif %}
+
+    {% if 'world_part' in hints %}
+        <p>World Part: {{ country.world_part }}</p>
+    {% endif %}
+
+    <hr>
+
+    <input type="text" name="answer" placeholder="Enter country name">
+    <button type="submit">Check</button>
+
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+
+        <button type="submit" name="next" value="1">Next country</button>
+    {% endif %}
+
+</form>
+
+{% endif %}
+
 {% endblock %}
