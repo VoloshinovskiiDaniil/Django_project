@@ -10,7 +10,6 @@
 
     <div class="button-grid">
 
-        <!-- ADD -->
         <button type="submit" name="action" value="add_world">Add World</button>
         <button type="submit" name="action" value="add_europe">Add Europe</button>
         <button type="submit" name="action" value="add_asia">Add Asia</button>
@@ -18,13 +17,12 @@
         <button type="submit" name="action" value="add_america">Add America</button>
         <button type="submit" name="action" value="add_oceania">Add Oceania</button>
 
-        <!-- CLEAR -->
-        <button class="clear-btn" type="submit" name="action" value="clear_world">Clear World</button>
-        <button class="clear-btn" type="submit" name="action" value="clear_europe">Clear Europe</button>
-        <button class="clear-btn" type="submit" name="action" value="clear_asia">Clear Asia</button>
-        <button class="clear-btn" type="submit" name="action" value="clear_africa">Clear Africa</button>
-        <button class="clear-btn" type="submit" name="action" value="clear_america">Clear America</button>
-        <button class="clear-btn" type="submit" name="action" value="clear_oceania">Clear Oceania</button>
+        <button class="clear-btn" type="submit" name="action" value="clear_world">Remove World</button>
+        <button class="clear-btn" type="submit" name="action" value="clear_europe">Remove Europe</button>
+        <button class="clear-btn" type="submit" name="action" value="clear_asia">Remove Asia</button>
+        <button class="clear-btn" type="submit" name="action" value="clear_africa">Remove Africa</button>
+        <button class="clear-btn" type="submit" name="action" value="clear_america">Remove America</button>
+        <button class="clear-btn" type="submit" name="action" value="clear_oceania">Remove Oceania</button>
 
     </div>
 </form>
@@ -49,7 +47,7 @@
     {% endfor %}
 </table>
 {% else %}
-<p>No countries have been added to this list yet </p>
+<p>No countries have been added to this list yet! </p>
 {% endif %}
 
 <script>

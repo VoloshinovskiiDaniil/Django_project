@@ -22,8 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('countries/', views.country_list, name='country_list'),
-    path('countries/add/', views.country_add, name='country_add'),
+    path('manage_country/', views.country_manage, name='country_manage'),
     path('modify-countries/', views.modify_user_countries, name='modify_countries'),
     path('my-countries/', views.my_countries, name='my_countries'),
     path('quiz/', views.quiz, name='quiz'),
 ]
+

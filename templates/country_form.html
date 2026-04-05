@@ -1,9 +1,9 @@
 {% extends 'base.html' %}
 
-{% block title %}Add country{% endblock %}
+{% block title %}Manage country{% endblock %}
 
 {% block content %}
-<h2>Add country</h2>
+<h2>Add / Remove country</h2>
 
 <form method="post">
     {% csrf_token %}
@@ -11,12 +11,12 @@
     {{ form.non_field_errors }}
 
     <p>
-        {{ form.name.label }}<br>
-        {{ form.name }}
+        <input type="text" name="{{ form.name.name }}" value="{{ form.name.value|default_if_none:'' }}" placeholder="Enter country name">
         <span class="error">{{ form.name.errors }}</span>
     </p>
 
-    <button type="submit">Submit</button>
+    <button type="submit" name="action" value="add">Add</button>
+    <button type="submit" class="clear-btn" name="action" value="remove">Remove</button>
 </form>
 
 {% endblock %}

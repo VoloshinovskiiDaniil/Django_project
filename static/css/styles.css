@@ -43,10 +43,6 @@ table {
     background: white;
 }
 
-img {
-    border-radius: 5px;
-}
-
 th, td {
     text-align: center;
     vertical-align: middle;
@@ -101,10 +97,6 @@ button:disabled {
     background-color: #e74c3c;
 }
 
-.error {
-    color: red;
-    font-size: 14px;
-}
 
 .footer {
     text-align: center;
