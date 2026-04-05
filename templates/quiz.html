@@ -16,11 +16,21 @@
     {% for h in hints %}
         <input type="hidden" name="hints" value="{{ h }}">
     {% endfor %}
+    <button type="submit" name="hint" value="capital"
+    {% if 'capital' in hints or message %}disabled{% endif %}>
+    Show Capital</button>
 
-    <button name="hint" value="capital">Show Capital</button>
-    <button name="hint" value="square">Show Area</button>
-    <button name="hint" value="population">Show Population</button>
-    <button name="hint" value="world_part">Show World Part</button>
+    <button type="submit" name="hint" value="square"
+    {% if 'square' in hints or message %}disabled{% endif %}>
+    Show Area</button>
+
+    <button type="submit" name="hint" value="population"
+    {% if 'population' in hints or message %}disabled{% endif %}>
+    Show Population</button>
+
+    <button type="submit" name="hint" value="world_part"
+    {% if 'world_part' in hints or message %}disabled{% endif %}>
+    Show World Part</button>
 
     <hr>
 
@@ -42,8 +52,10 @@
 
     <hr>
 
-    <input type="text" name="answer" placeholder="Enter country name">
-    <button type="submit">Check</button>
+    {% if not message %}
+        <input type="text" name="answer" placeholder="Enter country name">
+        <button type="submit">Check</button>
+    {% endif %}
 
     {% if message %}
         <p><strong>{{ message }}</strong></p>
